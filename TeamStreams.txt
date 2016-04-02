@@ -1,0 +1,12 @@
+#ATLANTAHAWKS#http://ftve2100-i.akamaihd.net/hls/live/217060/room204/%BITRATE%/prog.m3u8
+#CLEVELANDCAVALIERS#http://ftve1200-i.akamaihd.net/hls/live/217051/room107/%BITRATE%/prog.m3u8
+#DALLASMAVERICKS#http://ftve2200-i.akamaihd.net/hls/live/217064/room207/%BITRATE%/prog.m3u8
+#DETROITPISTONS#http://ftve2100-i.akamaihd.net/hls/live/217058/room202/%BITRATE%/prog.m3u8
+#INDIANAPACERS#http://ftve3200-i.akamaihd.net/hls/live/217137/room305/%BITRATE%/prog.m3u8
+#LACLIPPERS#http://ftve3100-i.akamaihd.net/hls/live/217082/room303/%BITRATE%/prog.m3u8
+#MEMPHISGRIZZLIES#http://ftve5100-i.akamaihd.net/hls/live/217167/room503/%BITRATE%/prog.m3u8
+#MIAMIHEAT#http://ftve2200-i.akamaihd.net/hls/live/217065/room208/%BITRATE%/prog.m3u8
+#MILWAUKEEBUCKS#http://ftve1200-i.akamaihd.net/hls/live/217050/room106/%BITRATE%/prog.m3u8
+#MINNESOTATIMBERWOLVES#http://ftve1200-i.akamaihd.net/hls/live/217049/room105/%BITRATE%/prog.m3u8
+#OKCTHUNDER#http://ftve3200-i.akamaihd.net/hls/live/217138/room306/%BITRATE%/prog.m3u8
+#ORLANDOMAGIC#http://ftve1200-i.akamaihd.net/hls/live/217052/room108/%BITRATE%/prog.m3u8
