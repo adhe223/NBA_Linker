@@ -28,10 +28,13 @@ function loadGames($html) {
 		var homeAbbrev = $(this).find("div.nbaTeamsRow div.nbaModTopTeamHm h5.hometeam").text();
 		
 		if (awayAbbrev.length > 0 && homeAbbrev.length > 0) {
-			var gameIDStr = awayAbbrev + "at" + homeAbbrev + " time: " + gameTime;
+			var gameIDStr = awayAbbrev + "at" + homeAbbrev
 			
 			if (gameDict.indexOf(gameIDStr) == -1) {
 				gameDict[gameIDStr] = gameTime
+				
+				//Get the stream name (ASYNC). Give a callback to call when finished
+				getTeamStream(awayAbbrev, homeAbbrev, buildGameSection);
 			}
 		}
 	});
