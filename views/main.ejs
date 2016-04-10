@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>NBA Linker</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<h1>NBA Linker</h1>
+	<div class="games-container">
+		<% for(var i=0; i<games.length; i++) { %>
+			<div class="game-div">
+				<a href="<%= games[i].stream %>"><%= games[i].ID %></a>
+			</div>
+		<% } %>
+	</div>
+</body>
+</html>
