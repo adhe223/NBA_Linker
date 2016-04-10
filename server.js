@@ -5,7 +5,7 @@ var request = require('request');
 var $ = require('cheerio');
 var app = express();
 
-var gameDict = [];
+var gameDict = new Object();
 
 app.get('/', function (req, res) {
 	//Load the streams file
@@ -21,7 +21,7 @@ app.get('/', function (req, res) {
 			var parsedHTML = $.load(html);
 			parser.loadGames(parsedHTML, gameDict, function() {
 				for (var game in gameDict) {
-					var stream = "blabla";
+					var stream = game + " " + gameDict[game];
 					//This will be populated with each game ID as the key, and the matching stream as the value
 					res.write(stream);
 				}

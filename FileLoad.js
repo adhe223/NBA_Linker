@@ -20,6 +20,7 @@ module.exports = {
 		
 		if (index != -1) {
 			stream = parseStreamFromFile(awayTeam, index);
+			return stream;
 		}
 		
 		index = streamFileContents.indexOf(homeTeam);
