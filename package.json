@@ -1,13 +1,15 @@
 {
   "name": "nbalinker",
   "version": "1.0.0",
-  "description": "Simple site to serve custom stream links.",
+  "description": "Nba Link serving",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.13.4",
+    "ejs": "^2.4.1",
     "cheerio": "^0.20.0",
     "cheerio-select": "^0.0.3",
+    "express": "^4.13.4",
     "fs": "^0.0.2",
+    "morgan": "^1.7.0",
     "request": "^2.69.0"
   },
   "devDependencies": {},
@@ -20,7 +22,8 @@
     "url": "git+https://github.com/adhe223/NBA_Linker.git"
   },
   "keywords": [
-    "links"
+    "NBA",
+    "linker"
   ],
   "author": "Alex Henry",
   "license": "ISC",
