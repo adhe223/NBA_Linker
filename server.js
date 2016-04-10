@@ -25,7 +25,6 @@ app.get('/', function (req, res) {
 					//This will be populated with each game ID as the key, and the matching stream as the value
 					res.write(stream);
 				}
-
 				res.end();
 			});
 		});
