@@ -33,9 +33,12 @@ app.get('/', function (req, res) {
 				var gamesArr = new Array();
 				for (var game in gameDict) {
 					var gameObject = new Object();
-					var teams = game.split('at');
+					var time = game.split('time')[1];
+					var teamString = game.split('time')[0];
+					var teams = teamString.split('at');
 					gameObject.away = teams[0];
 					gameObject.home = teams[1];
+					gameObject.gameTime = time;
 					gameObject.ID = game;
 					gameObject.stream = gameDict[game].trim();
 					gamesArr.push(gameObject)

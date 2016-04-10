@@ -12,8 +12,9 @@
     margin-right: 30px;
     margin-left: 30px;
 }
-.at-matchup {
-    font-size: 14pt;
+.mid-table {
+    display: inline-block;
+    font-size: 10pt;
     font-weight: bold;
     font-family: Verdana, Geneva, sans-serif;
 }

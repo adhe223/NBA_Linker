@@ -11,7 +11,7 @@ module.exports = {
 			var homeAbbrev = $(this).find("div.nbaTeamsRow div.nbaModTopTeamHm h5.hometeam").text();
 
 			if (awayAbbrev.length > 0 && homeAbbrev.length > 0) {
-				var gameIDStr = awayAbbrev + "at" + homeAbbrev
+				var gameIDStr = awayAbbrev + "at" + homeAbbrev + "time" + gameTime
 
 				if (gameDict[gameIDStr] === undefined) {
 					var stream = fileLoad.getTeamStream(awayAbbrev, homeAbbrev);

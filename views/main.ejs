@@ -15,7 +15,10 @@
 		<% for(var i=0; i<games.length; i++) { %>
 			<div class="game-div" onclick="window.open('<%= games[i].stream %>');">
 				<img class="team-logo" src="<%= games[i].away.toLowerCase() %>.gif" alt="logo" width="80" height="64">
-				<span class="at-matchup">at</span>
+				<table class="mid-table">
+					<tr><td><%= games[i].gameTime %></td></tr>
+					<tr><td>at</td></tr>
+				</table>
 				<img class="team-logo" src="<%= games[i].home.toLowerCase() %>.gif" alt="logo" width="80" height="64">
 			</div>
 		<% } %>
