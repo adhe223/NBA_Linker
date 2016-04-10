@@ -1,28 +1,10 @@
-var $ = require('cheerio');
 var fs = require('fs');
 var fileLoad = require('./FileLoad');
 var request = require('request');
-
-var gameDict = [];
+var $ = require('cheerio');
 
 module.exports = {
-	gotHTML: function(err, resp) {
-		if (err) {
-			return console.error(err)
-		}
-
-		var parsedHTML = $.load(resp.body);
-		module.exports.loadGames(parsedHTML, function() {
-			for (var game in gameDict) {
-				var stream = "blabla";
-				//This will be populated with each game ID as the key, and the matching stream as the value
-				resp.write(stream);
-			}
-			resp.end();
-		});
-	},
-
-	loadGames: function($html, callback) {
+	loadGames: function($html, gameDict, callback) {
 		$html("div.nbaPreMnScore").each(function(index) {
 			var gameTime = $(this).find("p.nbaPreStatTx").text();
 			var awayAbbrev = $(this).find("div.nbaTeamsRow div.nbaModTopTeamAw h5.awayteam").text();
