@@ -12,6 +12,9 @@
     "morgan": "^1.7.0",
     "request": "^2.69.0"
   },
+  "engines": {
+    "node": "4.4.0"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
