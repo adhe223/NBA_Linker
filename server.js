@@ -14,6 +14,7 @@ app.use(logger('dev'));
 
 // Serve static files
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'images')));
 
 app.get('/', function (req, res) {
 	//Load the streams file
@@ -31,8 +32,11 @@ app.get('/', function (req, res) {
 				var gamesArr = new Array();
 				for (var game in gameDict) {
 					var gameObject = new Object();
+					var teams = game.split('at');
+					gameObject.away = teams[0];
+					gameObject.home = teams[1];
 					gameObject.ID = game;
-					gameObject.stream = gameDict[game];
+					gameObject.stream = gameDict[game].trim();
 					gamesArr.push(gameObject)
 				}
 				res.render('main.ejs', {games: gamesArr});

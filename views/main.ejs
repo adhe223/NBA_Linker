@@ -7,11 +7,13 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<h1>NBA Linker</h1>
+	<img id="banner" src="banner.jpg">
 	<div class="games-container">
 		<% for(var i=0; i<games.length; i++) { %>
-			<div class="game-div">
-				<a href="<%= games[i].stream %>"><%= games[i].ID %></a>
+			<div class="game-div" onclick="window.open('<%= games[i].stream %>');">
+				<img class="team-logo" src="<%= games[i].away.toLowerCase() %>.gif" alt="logo" width="80" height="64">
+				<span class="at-matchup">at</span>
+				<img class="team-logo" src="<%= games[i].home.toLowerCase() %>.gif" alt="logo" width="80" height="64">
 			</div>
 		<% } %>
 	</div>
