@@ -6,12 +6,12 @@ var request = require('request');
 var gameDict = [];
 
 module.exports = {
-	gotHTML: function(err, resp, html) {
+	gotHTML: function(err, resp) {
 		if (err) {
 			return console.error(err)
 		}
 
-		var parsedHTML = $.load(html);
+		var parsedHTML = $.load(resp.body);
 		module.exports.loadGames(parsedHTML, function() {
 			for (var game in gameDict) {
 				var stream = "blabla";
@@ -31,7 +31,7 @@ module.exports = {
 			if (awayAbbrev.length > 0 && homeAbbrev.length > 0) {
 				var gameIDStr = awayAbbrev + "at" + homeAbbrev
 				
-				if (gameDict.indexOf(gameIDStr) == -1) {
+				if (!(gameIDStr in gameDict)) {
 					gameDict[gameIDStr] = fileLoad.getTeamStream(awayAbbrev, homeAbbrev);
 				}
 			}

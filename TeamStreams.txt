@@ -22,10 +22,10 @@
 #ORLANDOMAGIC#http://google.com/magic
 #PHILADELPHIA76ERS#http://google.com/76ers
 #PHOENIXSUNS#http://google.com/suns
-#PORTLANDTRAILBLAZERS#
-#SACRAMENTOKINGS#
-#SANANTONIOSPURS#
-#TORONTORAPTORS#
-#UTAHJAZZ#
-#WASHINGTONWIZARDS#
+#PORTLANDTRAILBLAZERS#http://google.com/blazers
+#SACRAMENTOKINGS#http://google.com/kings
+#SANANTONIOSPURS#http://google.com/spurs
+#TORONTORAPTORS#http://google.com/raptors
+#UTAHJAZZ#http://google.com/jazz
+#WASHINGTONWIZARDS#http://google.com/wizards
 
